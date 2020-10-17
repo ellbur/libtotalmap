@@ -326,7 +326,7 @@ I say "in a sense" because `handle()` deals with various funny edge cases that m
 
 `libtotalmap`, being just code, can do far more than just map keys to other keys. If you can code it, it can do it.
 
-So far, I've only used `libtotalmap` to add one more elaborate feature: movement keys that can be accessed on the letter keys---without moving your hand over to the arrow keys. This is a huge time saver, and now I can barely live without out. 
+So far, I've only used `libtotalmap` to add one more elaborate feature: movement keys that can be accessed on the letter keys---without moving your hand over to the arrow keys. This is a huge time saver, and now I can barely live without it. 
 
 The code for this is defined in `include/basic-movement-loop.hpp` and `src/basic-movement-loop.cpp`. `BasicMovementLoop` exposes a `handle()` function that also conforms to `DevInputHandler`. So, you can combine movement keys with another keyboard layout:
 
