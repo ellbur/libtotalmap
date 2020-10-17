@@ -23,6 +23,6 @@ LIB = $(LIB_DIR)/libtotalmap.so
 
 $(LIB) : $(SOURCES) $(HEADERS)
 	mkdir -p $(LIB_DIR)
-	$(CXX) -shared -fPIC -O3 -g -std=c++17 -Wall -Wno-unused-variable -Wno-unused-result $(INCLUDE) $(SOURCES) -lboost_program_options -o $(LIB)
+	$(CXX) -shared -fPIC -O3 -g -std=c++17 -Wall -Wno-unused-variable -Wno-unused-result $(INCLUDE) $(SOURCES) -o $(LIB)
 
 
