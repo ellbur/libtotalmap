@@ -73,8 +73,8 @@ If those groups do not yet exist on your system, you may create them with:
 
 To add yourself to the necessary groups, use, as appropriate:
 
-    sudo usermode -a -G input yourusername
-    sudo usermode -a -G uinput yourusername
+    sudo usermod -a -G input yourusername
+    sudo usermod -a -G uinput yourusername
 
 To change device permissions in a way that persists across boots, create a file `/etc/udev/rules.d/99-uinput.rules` and add the following, changing the group to `uinput` if appropriate:
    
